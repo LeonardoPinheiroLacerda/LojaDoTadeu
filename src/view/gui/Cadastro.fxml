@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainForm" prefHeight="444.0" prefWidth="300.0" stylesheets="@../style/Home.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CadastroController">
+   <children>
+      <VBox layoutY="52.0" prefHeight="379.0" prefWidth="300.0" style="-fx-spacing: 8; -fx-padding: 10;" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="52.0">
+         <children>
+            <TextField fx:id="usuario" promptText="Usuário">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="senha" promptText="Senha">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="nome" promptText="Nome">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="sobrenome" promptText="Sobrenome">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ramal" promptText="Ramal">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="cargo" prefHeight="29.0" prefWidth="8000.0" promptText="Cargo" />
+            <ComboBox fx:id="loja" prefHeight="29.0" prefWidth="8000.0" promptText="Loja" />
+            <ComboBox fx:id="gerente" prefHeight="29.0" prefWidth="8000.0" promptText="Gerente" />
+            <Button fx:id="cadastrar" mnemonicParsing="false" onAction="#onCadastrarAction" prefHeight="25.0" prefWidth="8000.0" text="Cadastrar">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="51.0" layoutY="20.0" text="Cadastro de novo Funcionario" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="voltar" layoutX="224.0" layoutY="413.0" onMouseClicked="#onVoltarMouseClicked" text="Voltar &lt;-" textFill="#34e4e4" underline="true" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="15.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
